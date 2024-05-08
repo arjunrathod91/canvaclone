@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./componenets/Home";
+import Navbar from "./componenets/Navbar/Navbar";
+import { MyContextProvider } from "./contextApi/Context";
+import EditPage from "./pages/EditPage";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loader,setLoader] = useState(true)
+  useEffect(()=>{
+    if(window.onload){
+    console.log(window.onload)
+    setLoader(true)}
+    else{
+      setLoader(false)
+    }
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <MyContextProvider>
+      <BrowserRouter>
+      <div className={loader ? 'flex loader-container' : 'none'}>
+        <div className="loader"></div>
+      </div>
+      <Navbar />
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/editPage" element={<EditPage/>} />
+        </Routes>
+      </BrowserRouter>
+      </MyContextProvider>
+      </div>
   );
 }
 
