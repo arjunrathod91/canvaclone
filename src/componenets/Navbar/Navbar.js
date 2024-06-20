@@ -66,13 +66,13 @@ function Navbar() {
         <div className='logo'>
             <img src="https://1000logos.net/wp-content/uploads/2021/10/Canva-logo.png" alt="" />
         </div>
-      </div>
-      <div className='n-center'>
+        <div className='n-center'>
         <label onMouseEnter={designcompo} >Design spotlight <ExpandMoreIcon/></label>
         <label onMouseEnter={buisenesscompo} >Buiseness <ExpandMoreIcon/></label>
         <label onMouseEnter={educationcompo} >Education <ExpandMoreIcon/></label>
         <label onMouseEnter={plansandpricecompo} >Plans and pricing <ExpandMoreIcon/></label>
         <label onMouseEnter={learncompo}>Learn <ExpandMoreIcon/></label>
+      </div>
       </div>
       <div className='n-right'>
         <div className='icons'>

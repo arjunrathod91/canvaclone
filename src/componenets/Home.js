@@ -106,6 +106,63 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="section1">
+        <div className="head">
+          <label>You Might To Do</label>
+        </div>
+        <div className="todos">
+          <div>
+            <div className="box">
+                <img src="https://static.canva.com/web/images/fee2a614b2b937f0d441f65282c22096.png" alt="" />
+            </div>
+            <label>Play With Canva</label>
+          </div>
+          <div>
+            <div className="box">
+                <img src="https://template.canva.com/EAFdVYrB6ok/3/0/416w-TUNKKW6oeLc.jpg" alt="" />
+            </div>
+            <label>Presentation (16:9)</label>
+          </div>
+          <div>
+            <div className="box">
+                <img src="https://template.canva.com/EAFdVYTOpz0/1/0/400w-daEvcUOChto.jpg" alt="" />
+            </div>
+            <label>Play With Canva</label>
+          </div>
+          <div>
+            <div className="box"></div>
+            <label>Play With Canva</label>
+          </div>
+        </div>
+      </div>'<div className="section1">
+        <div className="head">
+          <label>You Might To Do</label>
+        </div>
+        <div className="todos">
+          <div>
+            <div className="box">
+                <img src="https://static.canva.com/web/images/fee2a614b2b937f0d441f65282c22096.png" alt="" />
+            </div>
+            <label>Play With Canva</label>
+          </div>
+          <div>
+            <div className="box">
+                <img src="https://template.canva.com/EAFdVYrB6ok/3/0/416w-TUNKKW6oeLc.jpg" alt="" />
+            </div>
+            <label>Presentation (16:9)</label>
+          </div>
+          <div>
+            <div className="box">
+                <img src="https://template.canva.com/EAFdVYTOpz0/1/0/400w-daEvcUOChto.jpg" alt="" />
+            </div>
+            <label>Play With Canva</label>
+          </div>
+          <div>
+            <div className="box"></div>
+            <label>Play With Canva</label>
+          </div>
+        </div>
+      </div>'
     </div>
   );
 }
